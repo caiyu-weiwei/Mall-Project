@@ -3,11 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import { Button } from 'vant'
+import { Button, Row, Col } from 'vant'
 
 Vue.config.productionTip = false
 
-Vue.use(Button)
+Vue.use(Button).use(Row).use(Col)
 
 /* eslint-disable no-new */
 new Vue({
