@@ -7,7 +7,7 @@
       <van-col span="16">
         <input type="text" class="search-input">
       </van-col>
-      <van-col span="5">
+      <van-col span="4">
         <van-button class="search-button">查找</van-button>
       </van-col>
     </van-row>

@@ -1,11 +1,13 @@
 <template>
   <div>
     <search-bar></search-bar>
+    <swiper></swiper>
   </div>
 </template>
 
 <script>
   import searchBar from './SearchBar'
+  import swiper from './swiper'
   export default {
     name: 'ShoppingMall',
     data() {
@@ -14,7 +16,8 @@
       }
     },
     components: {
-      searchBar
+      searchBar,
+      swiper
     },
     methods: {
       getSourceData() {}
