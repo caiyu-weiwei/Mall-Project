@@ -15,15 +15,15 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        searchIcon: require('../assets/images/search.png')
-      }
-    },
-    methods: {
+export default {
+  data () {
+    return {
+      searchIcon: require('../assets/images/search.png')
     }
+  },
+  methods: {
   }
+}
 </script>
 
 <style scoped>
