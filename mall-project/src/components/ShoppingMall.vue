@@ -37,6 +37,9 @@ export default {
             this.slides = data.data.slides
           } 
         })
+        .catch(err => {
+          console.log('catch err', err)
+        })
     }
   }
 }
