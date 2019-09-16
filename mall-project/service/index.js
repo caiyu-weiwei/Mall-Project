@@ -1,8 +1,7 @@
-const Koa = require('koa')
-const app = new Koa()
-app.use(async ctx => {
-  ctx.body = 'Hello Koa2'
-})
-app.listen(3000, () => {
-  console.log('hello port 3000')
-})
+const { connect } = require('./database/init')
+
+// 立即执行函数
+// 前端页面脚本压缩可减少脚本数量和脚本大小，为了避免压缩时前一个脚本没有写最后一个分号而导致压缩后脚本不能使用，所以要在开始加一个分号
+;(async () => {
+  await connect()
+})()
