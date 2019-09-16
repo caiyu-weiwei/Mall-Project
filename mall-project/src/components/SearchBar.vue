@@ -31,6 +31,7 @@ export default {
   height: 2.2rem;
   line-height: 2.2rem;
   background-color: #e5017d;
+  overflow: hidden;
 }
 .search-icon{
   width: 50%;

@@ -1,15 +1,15 @@
 <template>
   <div>
     <search-bar></search-bar>
-    <swiper :slides="slides"></swiper>
+    <swiper :slides="slides" class="swipe-area"></swiper>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import URL from '@/serviceAPI.config'
-import searchBar from './SearchBar'
-import swiper from './swiper'
+import searchBar from '@/components/SearchBar'
+import swiper from '@/components/swiper'
 export default {
   name: 'ShoppingMall',
   data () {
@@ -46,5 +46,9 @@ export default {
 </script>
 
 <style scoped>
-
+.swipe-area{
+  clear: both;
+  max-height: 11rem;
+  overflow: hidden;
+}
 </style>

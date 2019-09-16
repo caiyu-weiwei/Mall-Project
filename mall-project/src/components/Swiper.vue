@@ -2,7 +2,7 @@
   <div class="swiper">
     <van-swipe :autoplay="3000">
       <van-swipe-item v-for="slide in slides" :key="slide.goodsId">
-        <img v-lazy="slide.image" />
+        <img v-lazy="slide.image" width="100%"/>
       </van-swipe-item>
     </van-swipe>
   </div>
